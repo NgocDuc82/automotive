@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial,sans-serif;
+    background-color: #fff ;
+    margin: 0;
+}
+
+header {
+    background-image: url('https://newsmd1fr.keeng.net/tiin/archive/images/20210715/132650_5.jpg');
+    background-position: center center;
+    background-size: cover;
+    color:#fff;
+    flex-direction: column;
+    min-height: calc(100vh - 72px);
+    display: flex;
+}
+
+.container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem ;
+}
+
+nav .logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.select {
+    font-weight: bold;
+}
+
+nav li {
+    padding: 10px 10px ;
+
+}
+
+nav a {
+    color: #fff ;
+    text-decoration: none;
+}
+
+.content {
+    margin: auto;
+    width: 100%;
+}
+
+.content h1 {
+    color: #00c2ff ;
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1rem ;
+    margin-bottom: 10px;
+}
+
+.content .hightlight {
+    border: 1px solid #00c2ff;
+}
+
+.hightlight {
+    background-color: #00c2ff ;
+    color: #fff ; 
+    padding: 1rem;
+
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+}
+
+footer strong {
+    color: #00c2ff ;
+}
+
+@media screen and  (max-width:720px){
+    header ul .hightlight {
+        display: none;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    footer {
+
+    }
+
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer li {
+        margin-bottom: 0.5rem;
+    }
+    
+}
